@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class SupplerController {
-    @GetMapping("/supplers")
+    @GetMapping("/supplier")
     public String getSuppler(){
         return "Suppler";
     }
