@@ -18,6 +18,7 @@ public class CountryController {
     public String getCountries(Model model) {
         List<Country> countryList = countryService.getCountries() ;
         model.addAttribute("countries",countryList);
+        model.addAttribute("pageTitle","Countries");
         return "country";
 
     }
